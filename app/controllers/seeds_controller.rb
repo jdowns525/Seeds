@@ -1,5 +1,6 @@
 class SeedsController < ApplicationController
   before_action :set_seed, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except: [:index, :show]
 
   # GET /seeds or /seeds.json
   def index
@@ -65,6 +66,6 @@ class SeedsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def seed_params
-      params.require(:seed).permit(:name, :category, :description, :image_url)
-    end
+      params.require(:seed).permit(:name, :category_id, :description, :image_url)
+    end    
 end
