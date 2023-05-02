@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @seed.name %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @seed.category %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @seed.description %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @seed.image_url %>
+</p>
+
+<%= link_to 'Edit', edit_seed_path(@seed) %> |
+<%= link_to 'Back', seeds_path %>
