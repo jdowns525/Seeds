@@ -31,11 +31,12 @@
       <h3><%= seed.name %></h3>
       <p><strong>Category:</strong> <%= seed.category.name %></p>
       <p><strong>Description:</strong> <%= seed.description %></p>
-      <a href="<%= seed_path(seed) %>">Show</a>
-      <a href="<%= edit_seed_path(seed) %>">Edit</a>
-      <%= link_to 'Destroy', seed, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <a href="<%= seed_path(seed) %>">Details</a>
+      
+
     </div>
   <% end %>
+  <%= will_paginate @seeds %>
 </div>
 
 <script>

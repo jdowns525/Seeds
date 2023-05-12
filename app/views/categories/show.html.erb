@@ -1,28 +1,34 @@
 <h1 id="category-name"><%= @category.name %></h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @seeds.each do |seed| %>
-      <tr>
-        <td><%= seed.name %></td>
-        <td><%= seed.description %></td>
-        <td><%= seed.image_url %></td>
-        <td><%= link_to 'Show', seed %></td>
-        <td><%= link_to 'Edit', edit_seed_path(seed) %></td>
-        <td><%= link_to 'Destroy', seed, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="card">
+  <div class="card-header">
+    Seeds
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @seeds.each do |seed| %>
+          <tr>
+            <td><%= seed.name %></td>
+            <td><%= seed.description %></td>
+            
+            <td><%= link_to 'Show', seed %></td>
+            <td><%= link_to 'Edit', edit_seed_path(seed) %></td>
+            <td><%= link_to 'Destroy', seed, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 <%= link_to 'Back', seeds_path %>
 
@@ -35,4 +41,3 @@
     });
   });
 </script>
-

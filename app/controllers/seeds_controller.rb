@@ -4,8 +4,9 @@ class SeedsController < ApplicationController
 
   
   def index
-    @seeds = Seed.all
+    @seeds = Seed.paginate(page: params[:page], per_page: 10)
   end
+  
 
  
   def show
