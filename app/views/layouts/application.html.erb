@@ -8,51 +8,74 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <style>
       /* Add your custom CSS styles here */
+      body {
+        background-color: #e8f5e9; /* A light green background */
+      }
+      
       header {
-        background-color: #f2f2f2;
+        background-color: #4caf50; /* A darker green for the header */
         padding: 10px;
       }
 
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+      .navbar-brand,
+      .nav-link {
+        color: #fff !important; /* White text for better contrast against the green background */
       }
 
-      nav ul li {
-        display: inline;
-        margin-right: 10px;
+      .navbar-toggler-icon {
+        filter: invert(1); /* Invert the color of the navbar toggler icon to make it visible against the green background */
       }
-
-      nav ul li a {
-        text-decoration: none;
-        color: #333;
-      }
-
-      nav ul li a:hover {
-        text-decoration: underline;
+      .btn {
+        background-color: #68a357;
+        color: #ffffff;
+        padding: 5px 12px;
+        font-size: 18px;
+        margin: 8px 0;
       }
     </style>
   </head>
 
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><%= link_to 'Home', root_path %></li>
-          <li><%= link_to 'Seeds', seeds_path %></li>
-          <li><%= link_to 'Categories', categories_path %></li> <!-- Add this line -->
-          <% if user_signed_in? %>
-            <li><%= link_to 'Add Seed', new_seed_path %></li>
-            <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
-          <% else %>
-            <li><%= link_to 'Sign In', new_user_session_path %></li>
-            <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-          <% end %>
-        </ul>
+      <nav class="navbar navbar-expand-lg">
+        <%= link_to 'SeedSphere', root_path, class: 'navbar-brand' %>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <%= link_to 'Home', root_path, class: 'nav-link' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Seeds', seeds_path, class: 'nav-link' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Categories', categories_path, class: 'nav-link' %>
+            </li>
+            <% if user_signed_in? %>
+              <li class="nav-item">
+                <%= link_to 'Add Seed', new_seed_path, class: 'nav-link' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+              </li>
+            <% else %>
+              <li class="nav-item">
+                <%= link_to 'Sign In', new_user_session_path, class: 'nav-link' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
       </nav>
     </header>
 
