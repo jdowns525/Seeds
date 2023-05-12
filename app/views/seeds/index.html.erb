@@ -15,10 +15,7 @@
     <label for="description">Description:</label>
     <textarea id="description" name="description" required></textarea>
   </div>
-  <div>
-    <label for="image-url">Image URL:</label>
-    <input type="text" id="image-url" name="image-url" required>
-  </div>
+  
   <div>
     <input type="submit" value="Create Seed">
   </div>
@@ -31,7 +28,6 @@
 <div id="seed-cards" class="card-container">
   <% @seeds.each do |seed| %>
     <div class="card">
-      <img src="<%= seed.image_url %>" alt="<%= seed.name %>">
       <h3><%= seed.name %></h3>
       <p><strong>Category:</strong> <%= seed.category.name %></p>
       <p><strong>Description:</strong> <%= seed.description %></p>

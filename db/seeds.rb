@@ -238,3 +238,103 @@ Seed.create(name: "Starfruit", category: exotic_seeds, description: "Starfruit s
 
 Seed.create(name: "Millet", category: ancient_grains, description: "Millet seeds are used to grow millet, an ancient grain that has been cultivated for thousands of years.")
 Seed.create(name: "Teff", category: ancient_grains, description: "Teff seeds are used to grow teff, an ancient grain that is a staple in Ethiopian cuisine.")
+Seed.create(name: "Blueberry", category: fruit_seeds, description: "Blueberry seeds are found within the blueberry fruit. They can be used to grow new blueberry bushes.")
+Seed.create(name: "Blackberry", category: fruit_seeds, description: "Blackberry seeds are found within the blackberry fruit. They can be used to grow new blackberry bushes.")
+
+Seed.create(name: "Lettuce", category: vegetable_seeds, description: "Lettuce seeds are used to grow a variety of lettuce types, from romaine to iceberg.")
+Seed.create(name: "Kale", category: vegetable_seeds, description: "Kale seeds are used to grow kale, a nutrient-rich leafy green.")
+
+Seed.create(name: "Oregano", category: herb_seeds, description: "Oregano seeds are used to grow oregano, a herb commonly used in Italian and Mediterranean cooking.")
+Seed.create(name: "Fennel", category: herb_seeds, description: "Fennel seeds are used to grow fennel, an aromatic herb with a flavor reminiscent of anise or licorice.")
+
+Seed.create(name: "Zinnia", category: flower_seeds, description: "Zinnia seeds can be used to grow zinnias, a popular type of flower known for its bright and vibrant colors.")
+Seed.create(name: "Snapdragon", category: flower_seeds, description: "Snapdragon seeds can be used to grow snapdragons, a popular type of flower known for its unique shape.")
+
+Seed.create(name: "Beech", category: tree_seeds, description: "Beech seeds, also known as beechnuts, are used to grow beech trees.")
+Seed.create(name: "Elm", category: tree_seeds, description: "Elm seeds, often found in a papery casing called a samara, are used to grow elm trees.")
+
+Seed.create(name: "Guava", category: exotic_seeds, description: "Guava seeds come from the guava fruit, a tropical fruit known for its sweet and slightly tangy taste.")
+Seed.create(name: "Pitaya", category: exotic_seeds, description: "Pitaya seeds, also known as dragon fruit seeds, are found in the dragon fruit, a cactus fruit known for its unique appearance and taste.")
+
+Seed.create(name: "Buckwheat", category: ancient_grains, description: "Buckwheat seeds are used to grow buckwheat, an ancient grain that is not related to wheat and is often used in gluten-free cooking.")
+Seed.create(name: "Sorghum", category: ancient_grains, description: "Sorghum seeds are used to grow sorghum, an ancient grain that is drought-resistant and versatile in cooking.")
+Seed.create(name: "Apple", category: fruit_seeds, description: "Apple seeds are found in the core of the apple. They can be used to grow new apple trees, though they may not grow the same variety as the parent tree.")
+Seed.create(name: "Kiwi", category: fruit_seeds, description: "Kiwi seeds are found within the kiwi fruit. They can be used to grow new kiwi plants.")
+
+Seed.create(name: "Spinach", category: vegetable_seeds, description: "Spinach seeds are used to grow spinach, a nutrient-rich leafy green vegetable.")
+Seed.create(name: "Radish", category: vegetable_seeds, description: "Radish seeds are used to grow radishes, a root vegetable that can be spicy or sweet.")
+
+Seed.create(name: "Basil", category: herb_seeds, description: "Basil seeds are used to grow basil, a popular herb used in many types of cuisine, especially Italian.")
+Seed.create(name: "Dill", category: herb_seeds, description: "Dill seeds are used to grow dill, an herb that is often used in pickling and other recipes.")
+
+Seed.create(name: "Sunflower", category: flower_seeds, description: "Sunflower seeds can be used to grow sunflowers, a popular type of flower known for its large size and bright yellow petals.")
+Seed.create(name: "Marigold", category: flower_seeds, description: "Marigold seeds can be used to grow marigolds, a popular type of flower known for its bright orange and yellow colors.")
+
+Seed.create(name: "Pine", category: tree_seeds, description: "Pine seeds, found in pinecones, are used to grow pine trees.")
+Seed.create(name: "Oak", category: tree_seeds, description: "Oak seeds, also known as acorns, are used to grow oak trees.")
+
+Seed.create(name: "Mangosteen", category: exotic_seeds, description: "Mangosteen seeds come from the mangosteen fruit, a tropical fruit known for its sweet and tangy taste.")
+Seed.create(name: "Rambutan", category: exotic_seeds, description: "Rambutan seeds are found in the rambutan fruit, a tropical fruit known for its hairy appearance and sweet taste.")
+
+Seed.create(name: "Spelt", category: ancient_grains, description: "Spelt seeds are used to grow spelt, an ancient grain that is a relative of modern wheat.")
+Seed.create(name: "Einkorn", category: ancient_grains, description: "Einkorn seeds are used to grow einkorn, an ancient grain that is one of the earliest cultivated forms of wheat.")
+Seed.create(name: "Strawberry", category: fruit_seeds, description: "Strawberry seeds are found on the outside of the strawberry fruit. They can be used to grow new strawberry plants.")
+Seed.create(name: "Peach", category: fruit_seeds, description: "Peach seeds are found inside the stone of the peach. They can be used to grow new peach trees.")
+
+Seed.create(name: "Carrot", category: vegetable_seeds, description: "Carrot seeds are used to grow carrots, a root vegetable that's a staple in many diets.")
+Seed.create(name: "Broccoli", category: vegetable_seeds, description: "Broccoli seeds are used to grow broccoli, a nutritious green vegetable.")
+
+Seed.create(name: "Parsley", category: herb_seeds, description: "Parsley seeds are used to grow parsley, a versatile herb used in many different types of cuisine.")
+Seed.create(name: "Mint", category: herb_seeds, description: "Mint seeds are used to grow mint, a herb known for its refreshing flavor and aroma.")
+
+Seed.create(name: "Rose", category: flower_seeds, description: "Rose seeds can be used to grow roses, a popular type of flower known for its beauty and fragrance.")
+Seed.create(name: "Poppy", category: flower_seeds, description: "Poppy seeds can be used to grow poppies, a type of flower known for its bright colors and delicate petals.")
+
+Seed.create(name: "Maple", category: tree_seeds, description: "Maple seeds, often found in a 'helicopter' formation, are used to grow maple trees.")
+Seed.create(name: "Willow", category: tree_seeds, description: "Willow seeds, found in cotton-like structures, are used to grow willow trees.")
+
+Seed.create(name: "Jackfruit", category: exotic_seeds, description: "Jackfruit seeds come from the jackfruit, a large tropical fruit known for its sweet taste and distinctive texture.")
+Seed.create(name: "Passionfruit", category: exotic_seeds, description: "Passionfruit seeds are found in the passionfruit, a tropical fruit known for its sweet-tart flavor and aromatic pulp.")
+
+Seed.create(name: "Emmer", category: ancient_grains, description: "Emmer seeds are used to grow emmer, an ancient grain that was among the first cereals to be domesticated.")
+Seed.create(name: "Barley", category: ancient_grains, description: "Barley seeds are used to grow barley, an ancient grain that is versatile and can be used in a variety of dishes.")
+Seed.create(name: "Cherry", category: fruit_seeds, description: "Cherry seeds, also known as pits, are found in the center of cherries. They can be used to grow new cherry trees.")
+Seed.create(name: "Pomegranate", category: fruit_seeds, description: "Pomegranate seeds are found within the pomegranate fruit. They can be used to grow new pomegranate trees.")
+
+Seed.create(name: "Cucumber", category: vegetable_seeds, description: "Cucumber seeds are used to grow cucumbers, a refreshing vegetable often used in salads and pickling.")
+Seed.create(name: "Pepper", category: vegetable_seeds, description: "Pepper seeds are used to grow various types of peppers, from sweet bell peppers to spicy chili peppers.")
+
+Seed.create(name: "Rosemary", category: herb_seeds, description: "Rosemary seeds are used to grow rosemary, a woody herb with fragrant, needle-like leaves.")
+Seed.create(name: "Thyme", category: herb_seeds, description: "Thyme seeds are used to grow thyme, a robust herb with small, aromatic leaves.")
+
+Seed.create(name: "Tulip", category: flower_seeds, description: "Tulip seeds can be used to grow tulips, a popular type of flower known for its bright colors and elegant shape.")
+Seed.create(name: "Daisy", category: flower_seeds, description: "Daisy seeds can be used to grow daisies, a type of flower known for its simple beauty.")
+
+Seed.create(name: "Birch", category: tree_seeds, description: "Birch seeds, often found in small cones, are used to grow birch trees.")
+Seed.create(name: "Hickory", category: tree_seeds, description: "Hickory seeds, also known as hickory nuts, are used to grow hickory trees. The nuts are also edible.")
+
+Seed.create(name: "Durian", category: exotic_seeds, description: "Durian seeds come from the durian fruit, a tropical fruit known for its strong smell and unique taste.")
+Seed.create(name: "Lychee", category: exotic_seeds, description: "Lychee seeds are found in the lychee fruit, a tropical fruit known for its sweet taste and floral aroma.")
+
+Seed.create(name: "Farro", category: ancient_grains, description: "Farro seeds are used to grow farro, an ancient grain that's been used in the Mediterranean and Middle East for thousands of years.")
+Seed.create(name: "Kamut", category: ancient_grains, description: "Kamut seeds are used to grow Kamut, an ancient grain that is a type of wheat with large, plump kernels.")
+Seed.create(name: "Plum", category: fruit_seeds, description: "Plum seeds, also known as plum pits, are found in the center of plums. They can be used to grow new plum trees.")
+Seed.create(name: "Raspberry", category: fruit_seeds, description: "Raspberry seeds are found within the raspberry fruit. They can be used to grow new raspberry plants.")
+
+Seed.create(name: "Tomato", category: vegetable_seeds, description: "Tomato seeds are used to grow tomatoes, a staple in many diets and used in a wide variety of dishes.")
+Seed.create(name: "Zucchini", category: vegetable_seeds, description: "Zucchini seeds are used to grow zucchini, a versatile vegetable that can be used in both savory and sweet dishes.")
+
+Seed.create(name: "Cilantro", category: herb_seeds, description: "Cilantro seeds, also known as coriander, are used to grow cilantro, a herb often used in Mexican and Asian cooking.")
+Seed.create(name: "Sage", category: herb_seeds, description: "Sage seeds are used to grow sage, a herb with a strong aroma and earthy flavor.")
+
+Seed.create(name: "Daffodil", category: flower_seeds, description: "Daffodil seeds can be used to grow daffodils, a popular type of flower known for its bright yellow color.")
+Seed.create(name: "Lavender", category: flower_seeds, description: "Lavender seeds can be used to grow lavender, a type of flower known for its calming scent and beautiful purple flowers.")
+
+Seed.create(name: "Cherry Blossom", category: tree_seeds, description: "Cherry blossom seeds, found in cherries, are used to grow cherry blossom trees, known for their beautiful spring blossoms.")
+Seed.create(name: "Redwood", category: tree_seeds, description: "Redwood seeds, found in cones, are used to grow redwood trees, one of the tallest and longest-lived tree species on Earth.")
+
+Seed.create(name: "Starfruit", category: exotic_seeds, description: "Starfruit seeds are found in the starfruit, a tropical fruit known for its unique star shape when cut crosswise.")
+Seed.create(name: "Dragonfruit", category: exotic_seeds, description: "Dragonfruit seeds are found within the dragonfruit, a tropical fruit known for its vibrant color and mildly sweet flavor.")
+
+Seed.create(name: "Millet", category: ancient_grains, description: "Millet seeds are used to grow millet, an ancient grain that is drought-resistant and can be used in a variety of dishes.")
+Seed.create(name: "Teff", category: ancient_grains, description: "Teff seeds are used to grow teff, an ancient grain that is a staple in Ethiopian cooking.")
