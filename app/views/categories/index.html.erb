@@ -3,7 +3,18 @@
 <ul>
   <% @categories.each do |category| %>
     <li>
-      <%= link_to category.name, category_path(category) %>
+      <%= link_to category.name, category_path(category), class: "category-link" %>
     </li>
   <% end %>
 </ul>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var categoryLinks = document.getElementsByClassName("category-link");
+    for (var i = 0; i < categoryLinks.length; i++) {
+      categoryLinks[i].addEventListener("click", function() {
+        this.classList.toggle("highlighted");
+      });
+    }
+  });
+</script>

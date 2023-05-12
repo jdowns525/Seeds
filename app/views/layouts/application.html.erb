@@ -8,24 +8,52 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <style>
+      /* Add your custom CSS styles here */
+      header {
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
 
   <body>
     <header>
-     <nav>
-      <ul>
-        <li><%= link_to 'Home', root_path %></li>
-        <li><%= link_to 'Seeds', seeds_path %></li>
-        <li><%= link_to 'Categories', categories_path %></li> <!-- Add this line -->
-        <% if user_signed_in? %>
-          <li><%= link_to 'Add Seed', new_seed_path %></li>
-          <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
-        <% else %>
-          <li><%= link_to 'Sign In', new_user_session_path %></li>
-          <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-        <% end %>
-      </ul>
-    </nav>
+      <nav>
+        <ul>
+          <li><%= link_to 'Home', root_path %></li>
+          <li><%= link_to 'Seeds', seeds_path %></li>
+          <li><%= link_to 'Categories', categories_path %></li> <!-- Add this line -->
+          <% if user_signed_in? %>
+            <li><%= link_to 'Add Seed', new_seed_path %></li>
+            <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to 'Sign In', new_user_session_path %></li>
+            <li><%= link_to 'Sign Up', new_user_registration_path %></li>
+          <% end %>
+        </ul>
+      </nav>
     </header>
 
     <%= yield %>

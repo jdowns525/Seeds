@@ -1,3 +1,56 @@
 // Place all the styles related to the Seeds controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+// Define variables if needed
+$primary-color: #4CAF50;
+$secondary-color: #333;
+
+// Input styles
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid $secondary-color;
+  border-radius: 4px;
+  margin-bottom: 10px;
+
+  &:focus {
+    border-color: $primary-color;
+    outline: none;
+  }
+}
+
+input[type="submit"] {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// Card styles
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 48%;
+  border: 1px solid $secondary-color;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  &:hover {
+    background-color: #f2f2f2;
+  }
+}
+
+// Other styles related to the Seeds controller...
