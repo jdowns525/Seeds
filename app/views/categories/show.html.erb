@@ -1,4 +1,4 @@
-<h1><%= @category.name %></h1>
+<h1 id="category-name"><%= @category.name %></h1>
 
 <table>
   <thead>
@@ -25,3 +25,14 @@
 </table>
 
 <%= link_to 'Back', seeds_path %>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var categoryName = document.getElementById("category-name");
+    categoryName.addEventListener("click", function() {
+      // Your JavaScript code here
+      // You can perform actions when the category name is clicked
+    });
+  });
+</script>
+
