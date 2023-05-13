@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_05_02_180803) do
+ActiveRecord::Schema.define(version: 2023_05_13_000007) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,13 @@ ActiveRecord::Schema.define(version: 2023_05_02_180803) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "category_id", null: false
+    t.string "form"
+    t.string "function"
+    t.string "dispersal"
+    t.string "nutrition_facts"
+    t.string "seed_origin"
+    t.string "growth_facts"
+    t.string "germination"
     t.index ["category_id"], name: "index_seeds_on_category_id"
   end
 

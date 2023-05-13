@@ -25,6 +25,41 @@
             <%= @seed.image_url %>
           </p>
 
+          <p class="mb-2">
+            <strong>Form:</strong>
+            <%= @seed.form %>
+          </p>
+
+          <p class="mb-2">
+            <strong>Function:</strong>
+            <%= @seed.function %>
+          </p>
+
+          <p class="mb-2">
+            <strong>Dispersal:</strong>
+            <%= @seed.dispersal %>
+          </p>
+
+          <p class="mb-2">
+            <strong>Nutrition Facts:</strong>
+            <%= @seed.nutrition_facts %>
+          </p>
+
+          <p class="mb-2">
+            <strong>Seed Origin:</strong>
+            <%= @seed.seed_origin %>
+          </p>
+
+          <p class="mb-2">
+            <strong>Growth Facts:</strong>
+            <%= @seed.growth_facts %>
+          </p>
+
+          <p class="mb-2">
+            <strong>Germination:</strong>
+            <%= @seed.germination %>
+          </p>
+
           <div class="d-flex justify-content-between">
             <%= link_to 'Edit', edit_seed_path(@seed), class: 'btn btn-primary' %>
             <%= link_to 'Back', seeds_path, class: 'btn btn-secondary' %>

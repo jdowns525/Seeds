@@ -1,28 +1,50 @@
-<div class="card-container">
+<div id="categories-cards" class="card-container">
   <% @categories.each do |category| %>
     <div class="card">
-      <h3><%= link_to category.name, category_path(category) %></h3>
+      <h3><%= link_to category.name, category_path(category), class: "category-link" %></h3>
     </div>
   <% end %>
 </div>
 
-
 <style>
+#categories-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+}
+
 .card {
   width: 48%;
-  background-color: #fefee3; /* Match the button color */
-  color: #6a994e; /* Match the button text color */
+  border: 1px solid #ccc;
+  border-radius: 4px;
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-.card h3 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-  color: inherit; /* Inherit the text color from the parent card */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4caf50;
+  text-align: center;
+}
+
+.category-link {
+  text-decoration: none;
+  color: #4caf50;
+  transition: color 0.2s ease;
+}
+
+.category-link:hover {
+  color: #45a049;
+}
 </style>

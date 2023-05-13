@@ -2,26 +2,20 @@ class SeedsController < ApplicationController
   before_action :set_seed, only: %i[ show edit update destroy ]
   before_action :authenticate_user!, except: [:index, :show]
 
-  
   def index
     @seeds = Seed.paginate(page: params[:page], per_page: 10)
   end
-  
 
- 
   def show
   end
 
-  
   def new
     @seed = Seed.new
   end
 
-  
   def edit
   end
 
- 
   def create
     @seed = Seed.new(seed_params)
 
@@ -48,7 +42,6 @@ class SeedsController < ApplicationController
     end
   end
 
-  
   def destroy
     @seed.destroy
 
@@ -60,12 +53,13 @@ class SeedsController < ApplicationController
 
   private
     
-    def set_seed
-      @seed = Seed.find(params[:id])
-    end
+  def set_seed
+    @seed = Seed.find_by(id: params[:id])
+    redirect_to(seeds_url, notice: "Seed not found.") if @seed.nil?
+  end
+  
 
-    
     def seed_params
-      params.require(:seed).permit(:name, :category_id, :description, :image_url)
+      params.require(:seed).permit(:name, :category_id, :description, :image_url, :form, :function, :dispersal, :nutrition_facts, :seed_origin, :growth_facts, :germination)
     end    
 end

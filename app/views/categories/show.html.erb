@@ -1,11 +1,12 @@
-<h1 id="category-name"><%= @category.name %></h1>
+<div class="card-container">
+  <h1 id="category-name"><%= @category.name %></h1>
 
-<div class="card">
-  <div class="card-header">
-    Seeds
-  </div>
-  <div class="card-body">
-    <table class="table">
+  <div class="card">
+    <div class="card-header">
+      Seeds
+    </div>
+    <div class="card-body">
+      <table class="table">
       <thead>
         <tr>
           <th>Name</th>
@@ -21,8 +22,7 @@
             <td><%= seed.description %></td>
             
             <td><%= link_to 'Show', seed %></td>
-            <td><%= link_to 'Edit', edit_seed_path(seed) %></td>
-            <td><%= link_to 'Destroy', seed, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            
           </tr>
         <% end %>
       </tbody>
@@ -36,8 +36,63 @@
   document.addEventListener("DOMContentLoaded", function() {
     var categoryName = document.getElementById("category-name");
     categoryName.addEventListener("click", function() {
-      // Your JavaScript code here
-      // You can perform actions when the category name is clicked
+     
     });
   });
 </script>
+<style>
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+}
+
+#category-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4caf50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.card-header {
+  color: #4caf50;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.table th, .table td {
+  text-align: center;
+}
+
+.back-link {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4caf50;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #45a049;
+}
+
+</style>
