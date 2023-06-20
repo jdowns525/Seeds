@@ -3,10 +3,10 @@ Seed.destroy_all
 
 
 cereals = Category.create(name: "Cereals (Grains)")
-legumes = Category.create(name: "legumes")
-nuts = Category.create(name: "nuts")
-oilseeds = Category.create(name: "oilseeds")
-pseudocereals = Category.create(name: "pseudocereals")
+legumes = Category.create(name: "Legumes")
+nuts = Category.create(name: "Nuts")
+oilseeds = Category.create(name: "Oilseeds")
+pseudocereals = Category.create(name: "Pseudocereals")
 spice_seeds = Category.create(name: "Spice Seeds")
 fruit_seeds = Category.create(name: "Fruit Seeds")
 vegetable_seeds = Category.create(name: "Vegetable Seeds")
