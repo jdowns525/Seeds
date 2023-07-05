@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: vanilla_rails_production
   username: vanilla_rails
   password: <%= ENV['VANILLA_RAILS_DATABASE_PASSWORD'] %>
