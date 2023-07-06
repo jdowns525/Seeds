@@ -3,7 +3,7 @@ class SeedsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @seeds = Seed.paginate(page: params[:page], per_page: 10)
+    @seeds = Seed.all
   end
   
 
