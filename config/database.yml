@@ -81,7 +81,7 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
-  database: vanilla_rails_production
-  username: vanilla_rails
-  password: <%= ENV['VANILLA_RAILS_DATABASE_PASSWORD'] %>
+  #url: <%= ENV['DATABASE_URL'] %>
+  database: seedsphere
+  username: seedsphere
+  password: dZUfRaFc3gHkcCdCY3ft9ZS15Fw33AHh
