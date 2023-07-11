@@ -5,10 +5,7 @@
         <div class="card-body">
           <p id="notice" class="alert alert-info"><%= notice %></p>
 
-          <p class="mb-2">
-            <strong>Name:</strong>
-            <%= @seed.name %>
-          </p>
+          <h2><%= @seed.name %></h2> 
 
           <p class="mb-2">
             <strong>Category:</strong>
@@ -60,8 +57,7 @@
             <%= @seed.germination %>
           </p>
 
-          <div class="d-flex justify-content-between">
-            <%= link_to 'Edit', edit_seed_path(@seed), class: 'btn btn-primary' %>
+          <div class="d-flex justify-content-end">
             <%= link_to 'Back', seeds_path, class: 'btn btn-secondary' %>
           </div>
         </div>
