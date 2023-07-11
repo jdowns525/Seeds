@@ -3,8 +3,22 @@ class SeedsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @seeds = Seed.all
+    if params[:search].present?
+      search_query = params[:search].downcase
+      matching_seeds = Seed.where("lower(name) LIKE ? OR lower(description) LIKE ?", "%#{search_query}%", "%#{search_query}%")
+  
+      if matching_seeds.empty?
+        flash.now[:alert] = "Seed not available."
+      end
+    else
+      matching_seeds = Seed.all
+    end
+  
+    @seeds = matching_seeds.paginate(page: params[:page], per_page: 5)
+  
+    render template: "seeds/index.html.erb"
   end
+  
   
 
   def show
