@@ -14,7 +14,7 @@ class SeedsController < ApplicationController
       matching_seeds = Seed.all
     end
   
-    @seeds = matching_seeds.paginate(page: params[:page], per_page: 5)
+    @seeds = matching_seeds
   
     render template: "seeds/index.html.erb"
   end
